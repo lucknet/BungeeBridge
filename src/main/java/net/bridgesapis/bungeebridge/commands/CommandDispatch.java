@@ -19,7 +19,7 @@ public class CommandDispatch extends Command {
 	@Override
 	public void execute(CommandSender commandSender, String[] strings) {
 		if (strings.length < 3) {
-			commandSender.sendMessage(new ComponentBuilder("Usage : /dispatch <proxies|servers> <all|servername> <command>").color(ChatColor.RED).create());
+			commandSender.sendMessage(new ComponentBuilder("使用法 : /dispatch <proxies|servers> <all|servername> <command>").color(ChatColor.RED).create());
 		} else {
 			String selector = strings[0];
 			String subselector = strings[1];

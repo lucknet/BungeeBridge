@@ -22,7 +22,7 @@ public class CommandSetOption extends DefaultExecutor {
 	@Override
 	public void execute(CommandSender commandSender, String[] strings) {
 		if (strings.length < 2) {
-			commandSender.sendMessage(new ComponentBuilder("Usage : /setoption <option> <value>").color(ChatColor.RED).create());
+			commandSender.sendMessage(new ComponentBuilder("使用法 : /setoption <オプション> <値>").color(ChatColor.RED).create());
 		} else {
 			String option = strings[0];
 			String value = StringUtils.join(Arrays.copyOfRange(strings, 1, strings.length), " ");

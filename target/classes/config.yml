@@ -1,0 +1,21 @@
+proxy:
+  name: Proxy1
+
+# Default lang is french
+lang: default
+
+database:
+  sentinels: [] # Sentinels IP:PORT
+  auth: "" # Authentification key (same for both databases)
+  mastername: "" # A database which will be used to store permanent data
+  cachemastername: "" # A database which will be used to store temporary data. you can use the same as master name (not tested, shall work)
+
+# If you prefear to use a classic Redis network, uncomment the following lines.
+
+#singleredis:
+#  auth: "" #Authentication
+#  masterhost: "" # IP:PORT of the master
+#  cachehost: "" # IP:PORT of the cache db
+
+# Default permissions group name
+defaultGroup: Joueur

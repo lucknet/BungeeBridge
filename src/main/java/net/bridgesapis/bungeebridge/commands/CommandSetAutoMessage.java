@@ -27,7 +27,7 @@ public class CommandSetAutoMessage extends Command {
 			c.setColor(ChatColor.RED);
 			p.sendMessage(c);
 		} else if (args.length < 2) {
-			TextComponent c = new TextComponent("/setautomessage [duration] [message]");
+			TextComponent c = new TextComponent("/setautomessage [長さ] [メッセージ]");
 			c.setColor(ChatColor.RED);
 			p.sendMessage(c);
 		} else {

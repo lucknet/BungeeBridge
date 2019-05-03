@@ -23,7 +23,7 @@ public class CommandLocation extends DefaultExecutor {
 	@Override
 	public void execute(CommandSender commandSender, String[] strings) {
 		if (strings.length < 1) {
-			commandSender.sendMessage(new ComponentBuilder("Usage : /locate <pseudo>").color(ChatColor.RED).create());
+			commandSender.sendMessage(new ComponentBuilder("使用法 : /locate <pseudo>").color(ChatColor.RED).create());
 		} else {
 			UUID id = plugin.getUuidTranslator().getUUID(strings[0], false);
 			if (id == null) {
